@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak-Now</title> 
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'web/img/favicon.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <div><img class="logo-img" src="{% static 'web/img/speak-now-logo.png' %}" alt="logo"></div>
+            </a>
+            <ul class="div-ul">
+                <li class="nav-link"> <a class="nav-a" href="#">Sobre Speak-Now</a></li>
+                <li class="nav-link"><a class="nav-a" href="#">Curso</a></li>
+                <li class="nav-link"><a class="nav-a" href="#">Contacto</a></li>
+                <li class="nav-link"><a class="nav-a" href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h1 class="about-title">
+                CURSO DE INGLÉS EN LINEA
+            </h1>
+            <img src="{% static 'web/img/conversation-main.jpg' %}" alt="img-main" class="about-img">
+            <p class="about-parrafo">
+                ¿Está preparado para abrir las puertas a un inglés fluido? Bienvenido a "SPEAK-NOW", tu puerta de entrada para convertirse en un hablante del idioma inglés,  el idioma más hablado del mundo. 
+
+                Tanto si es usted un principiante que busca sentar unas bases sólidas como si es un estudiante de nivel                 intermedio que desea perfeccionar sus habilidades, este dinámico curso en línea está diseñado para              satisfacer sus necesidades.
+            </p>
+        </section>
+    </main>
+
+    <script src="{% static 'web/js/script.js' %}"></script>
+</body>
+</html>
