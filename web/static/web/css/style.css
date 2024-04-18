@@ -4,6 +4,9 @@
     --turquesa: #20dad8;
     --azul-cielo-claro: #b7f1f9;
     --azul-oscuro: #16244a;
+    --azul-fuerte: #006993;
+    --azulado: #ced1ff;
+    --gris-claro: #e2e2e2;
 }
 
 * {
@@ -72,12 +75,13 @@ nav {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 10px;
+    padding: 10px 0 10px 0;
     background-color: var(--azul-cielo);
 }
 
 .about-title {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
     padding-top: 15px;
     border-bottom: solid 2px white;
@@ -90,6 +94,137 @@ nav {
 }
 
 .about-parrafo {
-    width: 1000px;
+    width: 800px;
     color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* courses */
+
+
+.courses {
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    /* grid-template-columns: repeat(1, 1fr); */
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.item-a1 {
+    background-color: var(--azul-cielo-claro);
+}
+
+.item-b1 {
+    background-color: var(--gris-claro);
+}
+
+.item-c1 {
+    background-color: var(--azul-fuerte);
+}
+
+.title-name {
+    margin: 40px 0 20px 0;
+    font-size: 1.8rem;
+    color: var(--azul-oscuro);
+}
+
+.item-title-a1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--azul-fuerte);
+    padding: 10px 0 10px 0;
+}
+
+.item-title-b1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--azul-oscuro);
+    padding: 10px 0 10px 0;
+}
+
+.item-title-c1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+.item-img {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.item-button {
+    margin: 10px;
+    padding: 10px  10px ;
+    border-radius: 10px;
+    color: var(--azul-fuerte);
+    background-color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.item-button:hover {
+    color: var(--azul-oscuro);
+    text-decoration: solid 1.5px underline;
+}
+
+
+/* benefits */
+
+
+.benefits {
+    text-align: center;
+    background-color: var(--azulado);
+    margin: 40px 0 0 0;
+    padding: 0 0 30px 0;
+}
+
+.benefits-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+}
+
+.benefits-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefits-img {
+    width: 150px;
+}
+
+.benefit-item {
+   background-color: white;
+   border-radius: 20px;
+   padding: 10px;
+   width: 200px;
+}
+
+.benefits-info {
+    font-size: 1.3rem;
+    color: var(--azul-fuerte);
+    font-weight: 600;
 }
